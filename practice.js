@@ -110,6 +110,23 @@
 // console.log(result);
 
 
+// Problem-6: Find the leap-year from an array
+
+function isLeapYear(years){
+    let leapYearArray = [];
+    for(year in years){
+        const singleYear = years[year];
+        if(singleYear % 4 ==0){
+            leapYearArray.push(singleYear);
+        }
+    }
+    console.log(leapYearArray);
+}
+
+const years = [2023, 2024, 2025, 2028, 2030];
+const result = isLeapYear(years);
+
+
 
 
 
